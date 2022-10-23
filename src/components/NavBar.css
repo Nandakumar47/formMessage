@@ -1,0 +1,61 @@
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.contain {
+  max-width: 1380px;
+}
+.navbar__icon_name{
+    display: flex;
+    align-items: center;
+}
+.navbar__icon_name h3{
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.navbar-nav * {
+  margin-right: 10px;
+}
+.navbar .navbar-nav .nav-link {
+  color: #EDEDED;
+  word-spacing: 3px;
+  font-weight: 500;
+}
+/* .navbar .navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.navbar .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+} */
+.navbar .navbar-brand:focus {
+  color: #435465;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #435465;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: #435465;
+}
+.signOut_button{
+  background-color: #384756;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+.signOut_button:hover{
+  background-color: #303d4a;
+}

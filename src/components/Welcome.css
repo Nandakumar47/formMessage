@@ -1,0 +1,49 @@
+.signInOut{
+    max-width: 1024px;
+    margin: 110px auto;
+    display: flex;
+    justify-content: center;
+}
+.signIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+.signIn>h1{
+    color: #3C4048;
+}
+.signIn>input{
+    width: 400px;
+    border-radius: 5px;
+    border: solid 1px rgb(199, 195, 195);
+    padding: 10px;
+    margin-bottom:0px ;
+    font-size: 1.1rem;
+}
+.signIn>button{
+    width: 400px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom:20px ;
+    background-color: #E0144C;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.signIn>button:nth-last-child(2):hover{
+    background-color: #b91540;
+}
+.signIn>:last-child{
+    background-color:white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    text-decoration: underline;
+    color: #1976d2;
+    align-self: flex-end;
+    margin-right: 40px;
+    cursor: pointer;
+}

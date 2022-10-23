@@ -1,0 +1,21 @@
+p{
+    margin: 0;
+}
+.documentation__content{
+    max-width: 1180px;
+    margin: 50px auto;
+}
+.documentation__content_card{
+    background-color: #001E3C;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px  50px;
+    font-size: 1.1rem;
+    margin:20px 0;
+}
+.documentation__content_card span{
+    color: #66d9ef;
+}
+.documentation__content_card:nth-child(4)>p{
+    color: #a6e22e;
+}

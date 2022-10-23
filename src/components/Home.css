@@ -1,0 +1,8 @@
+
+.card__outer{
+    margin: auto;
+    max-width: 1080px; 
+    display:grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
