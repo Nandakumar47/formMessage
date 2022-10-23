@@ -9,10 +9,12 @@ import MessageCard from "./MessageCard";
 
 function Home() {
   const [usersMessages, setUsersMessages] = useState([]);
+  const [userId, setUserId] = useState("");
   const navigate = useNavigate();
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
+        setUserId(auth.currentUser.uid);
         onValue(ref(db, `/${auth.currentUser.uid}`), (snapshot) => {
           setUsersMessages([]);
           const data = snapshot.val();

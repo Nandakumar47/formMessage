@@ -47,7 +47,7 @@ function Documentation() {
           </div>
           <p>Examples : Using axios</p>
           <div className="documentation__content_card">
-            axios .post("https://salty-plains-73732.herokuapp.com/", Your content in the above mentioned object format)
+            axios .post("https://glacial-shore-17634.herokuapp.com/", Your content in the above mentioned object format)
             .then(function (response) {"{ response can be accessed here}"});
           </div>
         </div>
