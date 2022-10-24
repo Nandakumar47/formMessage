@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { signOut } from "firebase/auth";
+
 import { auth, db } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -30,18 +30,10 @@ function Home() {
       }
     });
   }, []);
-  const handleSignOut = () => {
-    signOut(auth)
-      .then(() => {
-        navigate("/");
-      })
-      .catch((err) => {
-        alert(err.message);
-      });
-  };
+
   return (
     <div>
-      <NavBar signOutHandle={handleSignOut} />
+      <NavBar />
       <div className="app">
         <h1>Messages for you</h1>
         <div className="card__outer">

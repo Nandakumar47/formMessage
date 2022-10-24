@@ -3,8 +3,21 @@ import "./NavBar.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase";
+import { useNavigate } from "react-router-dom";
 
-function NavBar({ signOutHandle }) {
+function NavBar() {
+  const navigate = useNavigate();
+  const handleSignOut = () => {
+    signOut(auth)
+      .then(() => {
+        navigate("/");
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
+  };
   return (
     <Navbar
       style={{ backgroundColor: "#E0144C", padding: "15px 0" }}
@@ -33,7 +46,7 @@ function NavBar({ signOutHandle }) {
               Documentation
             </Nav.Link>
             <Nav.Link href="#" className="nav__item">
-              <button className="signOut_button" onClick={signOutHandle}>
+              <button className="signOut_button" onClick={handleSignOut}>
                 Log Out
               </button>
             </Nav.Link>
